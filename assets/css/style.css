@@ -13,7 +13,6 @@ body {
 
 h1 {
     vertical-align: auto;
-    margin: 20px 0px 0px 0px;
 }
 
 .main-page {
@@ -22,10 +21,10 @@ h1 {
 
 .bg { 
     /* The image used */
-    background-image: url("../images/developerbg.jpg");
+    background-image: url("../images/firefly_81933.jpg");
 
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -46,7 +45,15 @@ h1 {
     max-width: 100%;
     clear: both;
     margin: 0px auto 40px auto;
-    padding: 40px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+#intro {
+    padding: 20px;
 }
 
 #justifiedPic {
