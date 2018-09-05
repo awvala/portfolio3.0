@@ -358,4 +358,22 @@ textarea{
 
 li, p {
     line-height: 1.5;
-  }
+}
+
+.rafWrapper {
+    display: inline-block;
+}
+
+.rafImgContainer {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.rafImg {
+ width: 100%;
+ height: auto;
+}
+
