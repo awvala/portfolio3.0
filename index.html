@@ -10,7 +10,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <!-- Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -18,13 +21,14 @@
             <div class="navcontainer">
                   <div class="page-header">
                         <nav class="navbar navbar-expand-sm navbar-dark">
-                              <a class="nav-brand" href="#">
+                              <a class="nav-brand" href="#navbarSupportedContent">
                                     <img class="rounded-circle" id="navpic" src="assets/images/profilepic.jpg">
                               </a>
-                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                               </button>
-                              
+
                               <!-- Navigation links -->
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
@@ -32,7 +36,7 @@
                                                 <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                           </li>
                                           <li class="nav-item">
-                                                <a class="nav-item nav-link" href="index.html#projects">Projects</a>
+                                                <a class="nav-item nav-link" href="#projects">Projects</a>
                                           </li>
                                           <li class="nav-item">
                                                 <a class="nav-item nav-link" href="index.html#about">About</a>
@@ -46,212 +50,321 @@
                   </div>
             </div>
             <div class="bg">
-            <div class="welcomeContainer">
-                  <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4 center">
-                              <h1>Andrew Vala</h1>
+                  <div class="welcomeContainer">
+                        <div class="row">
+                              <div class="col-sm-4"></div>
+                              <div class="col-sm-4 center">
+                                    <h1>Andrew Vala</h1>
+                              </div>
+                              <div class="col-sm-4 "></div>
                         </div>
-                        <div class="col-sm-4 "></div>
-                  </div>
-                  <div class="row ">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4" id="welcomeHeader">
+                        <div class="row ">
+                              <div class="col-sm-4"></div>
+                              <div class="col-sm-4" id="welcomeHeader">
                                     <img class="rounded-circle" id="profilepic" src="assets/images/profilepic.jpg" alt="Profile
-                                    picture of Andrew Vala"> 
+                                    picture of Andrew Vala">
+                              </div>
+                              <div class="col-sm-4 "></div>
                         </div>
-                        <div class="col-sm-4 "></div>
-                  </div>
-                  <div class="row ">
+                        <div class="row ">
                               <div class="col-sm-3"></div>
                               <div class="col-sm-6 center" id="intro">
-                                    <p>I'm a full stack web developer located in Minneapolis, MN.  I enjoy leveraging technology to build creative solutions to technical problems.</p>
+                                    <p>I'm a full stack web developer located in Minneapolis, MN. I enjoy leveraging technology
+                                          to build creative solutions to technical problems.</p>
                               </div>
                               <div class="col-sm-3"></div>
                         </div>
-            </div>
+                  </div>
             </div>
       </div>
 
       <!-- End Navigation links -->
-      <div class="main-page d-flex flex-column ">
-            <div class="container ">
-                  <div class="row ">
-                        <div class="col-md-3 ">
-                              <h1>Portfolio</h1>
-                        </div>
-                        <div class="col-md-9 ">
-                        </div>
+      <div class="main-page d-flex flex-column" id="bodyContainer">
+            <div class="container">
+                  <div class="row center">
+                        <h2 class="marginCenter" id="projects"><i class="far fa-folder-open"></i>&nbsp Projects</h2>
                   </div>
                   <hr>
                   <!--  First Row -->
-                  <div class="row ">
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://awvala.github.io/Word-Guess-Game/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/godofthehangedman.jpg " alt="Image
-                                    link to a Norse themed hangman game ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://awvala.github.io/Word-Guess-Game/ " target=”_blank”>God
-                                                      of the Hanged(man)</a>
-                                                <a class="ghabs " href="https://github.com/awvala/Word-Guess-Game " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Word
-                                    Guess Game GitHub Repo " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
+                  <div class="row">
+                        <div class="col-md-4">
+                              <div class="card">
+                                    <img class="card-img" src="assets/images/godofthehangedman.jpg" alt="Image link to a Norse themed hangman game">
+                                    <hr>
+                                    <h5 class="cardTitle center">God of the Hanged(man)</h5>
+                                    <p class="cardDescription center">A Nordic themed hangman game you can play in your browser.  Adjust your volumn before starting.</p>
+                                    <div class="cardDate center">
+                                          May 30, 2018
                                     </div>
-                              </a>
-                        </div>
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://awvala.github.io/unit-4-game/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/StarWarsRPG.png " alt="Image link to
-                                    Star Wars RPG ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://awvala.github.io/unit-4-game/ " target=”_blank”>Star
-                                                      Wars RPG</a>
-                                                <a class="ghabs " href="https://github.com/awvala/unit-4-game " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Star
-                                    Wars RPG GitHub Repo " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
+                                    <div class="cardLinks">
+                                          <a class="btn btn-light active" href="https://awvala.github.io/Word-Guess-Game/" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="far fa-keyboard"></i>&nbsp Demo</a>
+                                          <a class="btn btn-light active" href="https://github.com/awvala/Word-Guess-Game" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="devicon-github-plain colored"></i>&nbsp GitHub</a>
                                     </div>
-                              </a>
+                                    <div class="devIcons center">
+                                          <i class="devicon-css3-plain-wordmark colored"></i>
+                                          <i class="devicon-bootstrap-plain colored"></i>
+                                          <i class="devicon-html5-plain-wordmark colored"></i>
+                                          <i class="devicon-javascript-plain colored"></i>
+                                          <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    </div>
+                              </div>
                         </div>
-                        <div class="col-md-2 "></div>
+                        <div class="col-md-4">
+                              <div class="card">
+                                    <img class="card-img" src="assets/images/StarWarsRPG.png" alt="Image link to a Star Wars themed RPG game.">
+                                    <hr>
+                                    <h5 class="cardTitle center">Star Wars RPG</h5>
+                                    <p class="cardDescription center">A jQuery browser game that pits Jedi and Sith in a battle to the death.</p>
+                                    <div class="cardDate center">
+                                          June 02, 2018
+                                    </div>
+                                    <div class="cardLinks">
+                                          <a class="btn btn-light active" href="https://awvala.github.io/unit-4-game/" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="far fa-keyboard"></i>&nbsp Demo</a>
+                                          <a class="btn btn-light active" href="https://github.com/awvala/unit-4-game" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                                    </div>
+                                    <div class="devIcons center">
+                                          <i class="devicon-css3-plain-wordmark colored"></i>
+                                          <i class="devicon-bootstrap-plain colored"></i>
+                                          <i class="devicon-html5-plain-wordmark colored"></i>
+                                          <i class="devicon-javascript-plain colored"></i>
+                                          <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                              <div class="card">
+                                    <img class="card-img" src="assets/images/KyudoTrivia.jpg" alt="Image link to a Kyudo themed trivia game">
+                                    <hr>
+                                    <h5 class="cardTitle center">Kyudo Trivia</h5>
+                                    <p class="cardDescription center">A Kyudo (Japanese longbow archery) themed trivia game.  Questions are timed.</p>
+                                    <div class="cardDate center">
+                                          June 10, 2018
+                                    </div>
+                                    <div class="cardLinks">
+                                          <a class="btn btn-light active" href="https://awvala.github.io/TriviaGame/" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="far fa-keyboard"></i>&nbsp Demo</a>
+                                          <a class="btn btn-light active" href="https://github.com/awvala/TriviaGame" target=”_blank” role="button" aria-pressed="true"><i
+                                                      class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                                    </div>
+                                    <div class="devIcons center">
+                                          <i class="devicon-css3-plain-wordmark colored"></i>
+                                          <i class="devicon-bootstrap-plain colored"></i>
+                                          <i class="devicon-html5-plain-wordmark colored"></i>
+                                          <i class="devicon-javascript-plain colored"></i>
+                                          <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    </div>
+                              </div>
+                        </div>
                   </div>
-                  <!--  Second Row  -->
-                  <div class="row ">
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://awvala.github.io/TriviaGame/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/KyudoTrivia.jpg " alt="Image link to
-                                    a Kyudo Trivia Game ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://awvala.github.io/TriviaGame/ " target=”_blank”>Trivia
-                                                      Game
-                                                </a>
-                                                <a class="ghabs " href="https://github.com/awvala/TriviaGame " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Trivia
-                                    Game Repo " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
+            <!--  Second Row  -->
+            <div class="row ">
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/giftastic.jpg" alt="Image link to a video game gif API site">
+                              <hr>
+                              <h5 class="cardTitle center">Giphy API Demo</h5>
+                              <p class="cardDescription center">A video game themed Giphy API site.  Users can can request, add, and manage thier favorite gifs from Giphy's API.</p>
+                              <div class="cardDate center">
+                                    June 17, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://awvala.github.io/giftastic/" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/giftastic" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-bootstrap-plain colored"></i>
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                              </div>
                         </div>
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://awvala.github.io/giftastic/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/giftastic.jpg " alt="Image link to
-                                    Giphy API demo ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://awvala.github.io/giftastic/ " target=”_blank”>Giphy
-                                                      API Demo</a>
-                                                <a class="ghabs " href="https://github.com/awvala/giftastic " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Giphy
-                                    API Repo " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="col-md-2 "></div>
                   </div>
-                  <!--  Third Row  -->
-                  <div class="row ">
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://awvala.github.io/RPS-Multiplayer/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/RPS.png " alt="Image link to the Cat
-                                    Scratcher game ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://awvala.github.io/RPS-Multiplayer/ " target=”_blank”>RPS
-                                                      Multiplayer
-                                                </a>
-                                                <a class="ghabs " href="https://github.com/awvala/RPS-Multiplayer " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Rock
-                                    Paper Scissors Repo " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/RPS.png" alt="Image link to a multiplayer Rock Paper Scissors game.">
+                              <hr>
+                              <h5 class="cardTitle center">Rock Paper Scissors Go!</h5>
+                              <p class="cardDescription center">An online Rock Paper Scissors game utilizing a Firebase database.  Play against a friend in another browser.</p>
+                              <div class="cardDate center">
+                                    June 25, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://awvala.github.io/RPS-Multiplayer/" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/RPS-Multiplayer" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-bootstrap-plain colored"></i>
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    <img class="newDevicon" src="assets/images/firebaseicon.png">
+                              </div>
                         </div>
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://github.com/awvala/liri-node-app " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/liribot.png " alt="Image link to the
-                                    liri-bot repository ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://github.com/awvala/liri-node-app " target=”_blank”>Node.js
-                                                      Liri Bot</a>
-                                                <a class="ghabs " href="https://github.com/awvala/liri-node-app " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="liri-bot
-                                    " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="col-md-2 "></div>
                   </div>
-                  <!-- Fourth Row -->
-                  <div class="row ">
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://github.com/awvala/bamazon " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/bamazon.jpg " alt="Image link to the
-                                    bamazon MySQL project ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://github.com/awvala/bamazon " target=”_blank”>MySQL/Node
-                                                      bamazon app</a>
-                                                <a class="ghabs " href="https://github.com/awvala/bamazon " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="bamazon
-                                    " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/liribot.png" alt="Image link to the liri-bot GitHub repository">
+                              <hr>
+                              <h5 class="cardTitle center">Liri-bot</h5>
+                              <p class="cardDescription center">LIRI is a command line node app that receives parameters and gives you back data from Twitter, Spotify, and OMDB API's.</p>
+                              <div class="cardDate center">
+                                    July 15, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://github.com/awvala/liri-node-app" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/liri-node-app" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                          <i class="devicon-javascript-plain colored"></i>
+                                          <i class="devicon-nodejs-plain"></i>
+                                          <img class="newDevicon" src="assets/images/npm.png">
+                                          <i class="devicon-twitter-plain colored"></i>
+                              </div>
                         </div>
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://build-da-burgerawvala.herokuapp.com/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/builddapburger.png " alt="Image link
-                                    to the Build-Da-Burger heroku app ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://build-da-burgerawvala.herokuapp.com/ " target=”_blank”>Build-Da-Burger</a>
-                                                <a class="ghabs " href="https://github.com/awvala/burger " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="Build-da-burger
-                                    " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="col-md-2 "></div>
-                  </div>
-                  <!-- Fifth Row -->
-                  <div class="row ">
-                        <div class="col-md-5 ">
-                              <a class="portfolioimagelink " href="https://partyupraan.herokuapp.com/ " target=”_blank”>
-                                    <div class="card text-white ">
-                                          <img class="card-img " src="assets/images/PartyUp.png " alt="Image link to the
-                                    bamazon MySQL project ">
-                                          <div class="card-img-overlay ">
-                                                <a class="cardbanner " href="https://partyupraan.herokuapp.com/ " target=”_blank”>Party
-                                                      Up!: Sequelize/MVP Group Project 2</a>
-                                                <a class="ghabs " href="https://github.com/awvala/PartyUp " target=”_blank”>
-                                                      <img class="ghImg " src="assets/images/githubicon.png " title="bamazon
-                                    " alt="Link to the project GitHub repo ">
-                                                </a>
-                                          </div>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="col-md-5 ">
-                        </div>
-                        <div class="col-md-2 "></div>
                   </div>
             </div>
+            <!--  Third Row  -->
+            <div class="row ">
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/bamazon.jpg" alt="Image link to the bamazon MySQL project">
+                              <hr>
+                              <h5 class="cardTitle center">Bamazon</h5>
+                              <p class="cardDescription center">An Amazon like store front utilizing command line prompts with the Inquirer NPM package.  This app uses MySQL as its backend database.</p>
+                              <div class="cardDate center">
+                                    June 30, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://github.com/awvala/bamazon/blob/master/awvala_bamazon_nodeDemo_vid.webm" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/bamazon" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    <i class="devicon-nodejs-plain"></i>
+                                    <img class="newDevicon" src="assets/images/npm.png">
+                                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/FriendFinder.png" alt="Image link to the Friend Finder Heroku app">
+                              <hr>
+                              <h5 class="cardTitle center">Friend Finder</h5>
+                              <p class="cardDescription center">A pop culture survey that matches users with pop culture personalities and characters.  This app is hosted on Heroku and utilizes MySQL as its database.</p>
+                              <div class="cardDate center">
+                                    August 6, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://mybestnerdfinder.herokuapp.com/" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/FriendFinder" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-bootstrap-plain colored"></i>
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    <i class="devicon-nodejs-plain"></i>
+                                    <i class="devicon-express-original colored"></i>
+                                    <img class="newDevicon" src="assets/images/npm.png">
+                                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                                    <i class="devicon-heroku-plain-wordmark colored"></i>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4">
+                        <div class="card">
+                              <img class="card-img" src="assets/images/builddapburger.png" alt="Image link to the Build-Da-Burger Heroku app">
+                              <hr>
+                              <h5 class="cardTitle center">Build-Da-Burger</h5>
+                              <p class="cardDescription center">A web based burger logger utilizing the MVC design pattern.  This project utilizes Node, Express, Handlebars, MySQL, and a custom ORM.</p>
+                              <div class="cardDate center">
+                                    August 12, 2018
+                              </div>
+                              <div class="cardLinks">
+                                    <a class="btn btn-light active" href="https://build-da-burgerawvala.herokuapp.com/" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="far fa-keyboard"></i>&nbsp Demo</a>
+                                    <a class="btn btn-light active" href="https://github.com/awvala/burger" target=”_blank” role="button" aria-pressed="true"><i
+                                                class="devicon-github-plain colored"></i>&nbsp GitHub</a>
+                              </div>
+                              <div class="devIcons center">
+                                    <i class="devicon-css3-plain-wordmark colored"></i>
+                                    <i class="devicon-bootstrap-plain colored"></i>
+                                    <i class="devicon-html5-plain-wordmark colored"></i>
+                                    <i class="devicon-javascript-plain colored"></i>
+                                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                                    <i class="devicon-nodejs-plain"></i>
+                                    <i class="devicon-express-original colored"></i>
+                                    <img class="newDevicon" src="assets/images/npm.png">
+                                    <img class="newDevicon" src="assets/images/handlebars-js.png">
+                                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                                    <i class="devicon-heroku-plain-wordmark colored"></i>
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!-- Fourth Row -->
+            <div class="row ">
+                  <div class="col-md-5 ">
+                        <a class="portfolioimagelink " href="https://build-da-burgerawvala.herokuapp.com/ " target=”_blank”>
+                              <div class="card text-white ">
+                                    <img class="card-img " src="assets/images/builddapburger.png " alt="Image link
+                                    to the Build-Da-Burger heroku app ">
+                                    <div class="card-img-overlay ">
+                                          <a class="cardbanner " href="https://build-da-burgerawvala.herokuapp.com/ " target=”_blank”>Build-Da-Burger</a>
+                                          <a class="ghabs " href="https://github.com/awvala/burger " target=”_blank”>
+                                                <img class="ghImg " src="assets/images/githubicon.png " title="Build-da-burger
+                                    " alt="Link to the project GitHub repo ">
+                                          </a>
+                                    </div>
+                              </div>
+                        </a>
+                  </div>
+                  <div class="col-md-2 "></div>
+            </div>
+            <!-- Fifth Row -->
+            <div class="row ">
+                  <div class="col-md-5 ">
+                        <a class="portfolioimagelink " href="https://partyupraan.herokuapp.com/ " target=”_blank”>
+                              <div class="card text-white ">
+                                    <img class="card-img " src="assets/images/PartyUp.png " alt="Image link to the
+                                    bamazon MySQL project ">
+                                    <div class="card-img-overlay ">
+                                          <a class="cardbanner " href="https://partyupraan.herokuapp.com/ " target=”_blank”>Party
+                                                Up!: Sequelize/MVP Group Project 2</a>
+                                          <a class="ghabs " href="https://github.com/awvala/PartyUp " target=”_blank”>
+                                                <img class="ghImg " src="assets/images/githubicon.png " title="bamazon
+                                    " alt="Link to the project GitHub repo ">
+                                          </a>
+                                    </div>
+                              </div>
+                        </a>
+                  </div>
+                  <div class="col-md-5 ">
+                  </div>
+                  <div class="col-md-2 "></div>
+            </div>
+      </div>
+      </div>
       </div>
       </div>
       <footer class="footer ">

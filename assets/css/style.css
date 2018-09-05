@@ -48,8 +48,21 @@ h1 {
     padding: 20px 0px 20px 0px;
 }
 
+.left {
+    text-align: left;
+}
+
 .center {
     text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.marginCenter {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intro {
@@ -171,6 +184,15 @@ h1 {
 
 /***** End Navigation styling *****/
 
+#bodyContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-folder-open {
+    font-size: 24px;
+}
+
 /***** footer styling *****/
 
 .footer {
@@ -235,19 +257,37 @@ textarea{
 /***** Minicontainer for the portfolio images and banners *****/
 
 .portfoliocontainer{
-    /*display: inline-block;*/
     position: relative;
-    /*margin: 10px 20px 10px 0px;*/
     margin: 10px 0px 10px 20px!important;
 
 }
 
-/***** Color text banner at the bottom of the image link *****/
-
 .card {
-    max-width: 350px;
+    padding: 10px 10px 10px 10px;
     margin-bottom: 20px;
-    border: 0px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.cardTitle {
+    font-weight: bold;
+}
+
+.cardDate {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.cardDescription {
+    font-size: 16px;
+}
+
+.cardLinks {
+    display: flex;
+    justify-content: space-between;
 }
 
 .portfolioimagelink{
@@ -286,6 +326,16 @@ textarea{
     text-decoration: none!important;
 }
 
+.devIcons{
+    margin-top: 10px;
+}
+
+.newDevicon{
+    height: auto;
+    width: 18px;
+    padding-bottom: 5px;
+}
+
 /*****  End Portfolio styling *****/
 
 .ghRepo {
@@ -296,5 +346,8 @@ textarea{
 .ghImg {
     width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+}
+
+.devIcons{
+    margin-top: 10px;
 }
